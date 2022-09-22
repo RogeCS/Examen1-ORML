@@ -1,0 +1,19 @@
+{
+  "name": "examen1-orml",
+  "version": "1.0.0",
+  "description": "Examen parcial 1 - Desarrollo de aplicaciones web",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "dev": "nodemon --watch ./index.js"
+  },
+  "author": "Oscar Rogelio Medina Lopez",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
