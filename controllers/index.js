@@ -5,9 +5,13 @@ exports.getInfo = (req, res) => {
 }
 
 exports.postTriangle = (req, res) => {
-    console.log(req.body.a1)
     isRec="negativo"
-    if (req.body.a1 == 90 || req.body.a2==9 || req.body.a3==9) isRec = "positivo"
+    a1 = req.body.a1
+    a2 = req.body.a2
+    a3 = req.body.a3
+
+    if (a1 == 90 || a2==90 || a3==90) isRec = "positivo"
+    if ((a1 + a2 + a3) != 180) isRec = "Triangulo no valido"
     res.send({"trianguloRect": isRec})
 }
 
